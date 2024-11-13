@@ -3,6 +3,10 @@
 Enjoy building your own healthy food store website!<br>
 This is a simple, responsive website for a healthy food online store. It features a clean layout with a focus on food offerings, health benefits, and user-friendly navigation.
 
+## Link Deployment
+
+https://module-2-anggreinipra.netlify.app/
+
 ## Table of Contents
 
 1. [Technologies Used](#technologies-used)
@@ -37,7 +41,7 @@ This is a simple, responsive website for a healthy food online store. It feature
    - Go to the repository page.
    - To clone, run the following command in your terminal:
      ```bash
-     git clone https://github.com/your-username/healthy-food-store.git
+     git clone https://github.com/anggreinipra/module-2-anggreinipra.git
      ```
    - To fork, click on the **Fork** button at the top-right corner of the repository page.
 
