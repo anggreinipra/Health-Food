@@ -34,10 +34,12 @@
 
       <div class="navbar-extra">
         <a href="#search" id="search"><i data-feather="search"></i></a>
-        <a href="#shopping" id="shopping-cart"
+        <a href="#menu" id="shopping-cart"
           ><i data-feather="shopping-cart"></i
         ></a>
-        <a href="#menu" id="hamburger-menu"><i data-feather="menu"></i></a>
+        <a href="#hamburger-menu" id="hamburger-menu"
+          ><i data-feather="menu"></i
+        ></a>
       </div>
     </nav>
     <!-- Navbar end -->
@@ -51,7 +53,7 @@
           Bite. Supports Your Health, Energizes Your Body, and Inspires a
           Happier Life!
         </p>
-        <a href="#" class="cta">Order Now!</a>
+        <a href="#menu" class="cta">Order Now!</a>
       </main>
     </section>
     <!-- Hero end -->
@@ -61,7 +63,19 @@
       <h2><span>About</span> Us</h2>
       <div class="row">
         <div class="about-img">
-          <img src="/asset/img/HF-saladmx.jpg" alt="about healty food" />
+          <picture>
+            <source
+              media="(min-width: 800px)"
+              srcset="asset/img/HF-salad-injar.jpg"
+            />
+
+            <source
+              media="(min-width: 450px)"
+              srcset="asset/img/HF-saladmx.jpg"
+            />
+
+            <img src="asset/img/HF-br2.jpg" alt="Fruit & Vegetables" />
+          </picture>
         </div>
         <div class="content">
           <h3>Healthy Food</h3>
@@ -117,10 +131,6 @@
           <div class="menu-card-pic" id="menu5">
             <img src="./asset/img/HF-yb.jpg" alt="yellow bowl" />
           </div>
-
-          <!-- <img src="/asset/img/HF-salad-injar.jpg" alt="salad in jar">
-          <h3 class="menu-card-title">Salad in Jar</h3>
-          <p class="menu-card-describe">Our Salad in a Jar is the perfect grab-and-go meal for anyone looking for a fresh, healthy option that’s both delicious and convenient. Made with layers of vibrant, nutrient-packed ingredients, each jar is carefully prepared to keep your salad fresh and crisp until you’re ready to enjoy it. Choose from a variety of seasonal vegetables, grains, proteins, and dressings, all packed into a portable mason jar. Ideal for meal prepping, lunch on the go, or a quick snack, our Salad in a Jar is a nutritious, flavorful solution to busy days. Simply shake and enjoy a perfectly balanced meal whenever you need it!</p> -->
         </div>
       </div>
     </section>
@@ -138,18 +148,24 @@
           class="map"
         ></iframe>
 
-        <form action="">
+        <form action="#hero">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Name" required />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="Email" />
+            <input type="email" placeholder="Email" required />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="Phone Number" />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              required
+              pattern="^\+?[1-9]\d{1,14}$"
+              title="Phone number should be in the format +1234567890 or 1234567890"
+            />
           </div>
           <div class="input-group">
             <i data-feather="message-circle"></i>
@@ -173,9 +189,9 @@
 
     <!-- Toggle menu -->
     <script src="js/script.js"></script>
-  </body>
 
-  <footer class="footer">
-    <p>&copy; 2024 @anggreinipra - RevoU Student. All Rights Reserved.</p>
-  </footer>
+    <footer class="footer">
+      <p>&copy; 2024 @anggreinipra - RevoU Student. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
